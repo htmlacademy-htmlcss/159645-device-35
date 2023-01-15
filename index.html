@@ -37,7 +37,9 @@
                         alt="Небольшая селфи-палка черного цвета.">
                       Любительская селфи-палка
                     </a>
-                    <button class="button-delete" type="button"></button>
+                    <button class="button-delete" type="button">
+                      <span class="visually-hidden">Удалить товар из корзины</span>
+                    </button>
                   </li>
                   <li class="popover-content-item">
                     <a class="popover-content-link" href="#">
@@ -45,7 +47,9 @@
                         alt="Профессиональная селфи-палка с толстой ручкой.">
                       Профессиональная селфи-палка
                     </a>
-                    <button class="button-delete" type="button"></button>
+                    <button class="button-delete" type="button">
+                      <span class="visually-hidden">Удалить товар из корзины</span>
+                    </button>
                   </li>
                 </ul>
                 <div class="total-goods">
@@ -58,7 +62,7 @@
           </div>
         </div>
         <nav class="navigation">
-          <button class="catalog-button" type="submit">Каталог товаров
+          <button class="catalog-button" type="button"> Каталог товаров
             <span class="catalog-button-icon"></span>
           </button>
           <div class="popover-catalog">
@@ -378,7 +382,7 @@
 
     <div class="modal-container modal-container-close">
       <div class="modal modal-delivery">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -392,7 +396,7 @@
               </div>
               <div class="field-group">
                 <label class="delivery-form-label" for="auth-email">Ваш e-mail:</label>
-                <input class="form-field field-email" type="text" id="auth-email" name="auth-email"
+                <input class="form-field field-email" type="email" id="auth-email" name="auth-email"
                   placeholder="Введите e-mail">
                 <span class="error-message">Забавный у вас адрес</span>
               </div>
@@ -431,7 +435,7 @@
                 </div>
               </div>
             </div>
-            <button class="button send-button" type="button">Отправить</button>
+            <button class="button send-button" type="submit">Отправить</button>
           </form>
         </section>
       </div>
